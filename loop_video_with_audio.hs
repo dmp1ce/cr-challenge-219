@@ -18,8 +18,7 @@ Merging looped video with audio ...
 Requirements:
 
  - Haskell (ghc, runhaskell)
- - ffmpeg (ffmpeg, ffprobe)
-
+ - ffmpeg 3.1.2 (ffmpeg, ffprobe)
 -}
 
 import System.Environment (getArgs)
