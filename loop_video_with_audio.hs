@@ -1,6 +1,7 @@
 #!/usr/bin/env runhaskell
 {-
 Coder Radio Challenge for Episode #219
+https://www.reddit.com/r/CoderRadio/comments/4zwqqz/219_coding_challenge_of_destiny/
 
 Takes two inputs, a video files and an audio file, and then loops the video 
 file over and over using the audio files for the audio of the video.

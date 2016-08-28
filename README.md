@@ -1,5 +1,7 @@
 # Coder Radio challenge - #219
 
+https://www.reddit.com/r/CoderRadio/comments/4zwqqz/219_coding_challenge_of_destiny/
+
 Convert an audio file to a video given a shorter video which loops continuously.
 
 ## Running with GHC
