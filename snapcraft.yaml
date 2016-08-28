@@ -1,0 +1,26 @@
+name: loop-video-with-audio
+version: 0.1.0
+summary: Loops video over the length of the audio file
+description: |
+  Creates a video with a video and audio input.
+  The video file is continuously looped until the audio file is finished playing.
+confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+
+apps:
+  loop-video-with-audio:
+    command: loop_video_with_audio
+
+parts:
+  loop-video-with-audio:
+    plugin: make
+    source: .
+    build-packages:
+      - ghc
+    artifacts:
+      - loop_video_with_audio
+    after: [ffmpeg]
+  ffmpeg:
+    organize:
+      usr/local/bin: usr/bin
+        
+# vim:tabstop=2 shiftwidth=2 expandtab

@@ -1,0 +1,9 @@
+version: '2'
+services:
+  snapcraft:
+    build:
+      context: ./
+      dockerfile: Dockerfile.snapcraft
+    volumes:        
+      - ./:/app
+    command: bash -c "snapcraft build && snapcraft snap"

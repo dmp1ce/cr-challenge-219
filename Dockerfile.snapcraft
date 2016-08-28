@@ -1,0 +1,17 @@
+FROM didrocks/snapcraft
+
+# Change user to match your host userid and groupid
+ENV USER=snapcraft USER_ID=1000 USER_GID=100
+
+# now creating user
+RUN groupadd --gid "${USER_GID}" -o "${USER}" && \
+    useradd \
+      --uid ${USER_ID} \
+      --gid ${USER_GID} \
+      --create-home \
+      --shell /bin/bash \
+      ${USER} && \
+    echo "${USER} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+USER ${USER}
+WORKDIR /app
