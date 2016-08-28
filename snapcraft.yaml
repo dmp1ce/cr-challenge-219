@@ -1,10 +1,10 @@
 name: loop-video-with-audio
-version: 0.1.0
+version: 0.1.1
 summary: Loops video over the length of the audio file
 description: |
   Creates a video with a video and audio input.
   The video file is continuously looped until the audio file is finished playing.
-confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+confinement: strict
 
 apps:
   loop-video-with-audio:
